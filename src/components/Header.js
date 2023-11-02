@@ -3,7 +3,7 @@ import {Link} from "react-router-dom"
 const Title = () => (
     <a href="/">
     <img
-    className="logo"
+    className="h-24 w-52 p-2"
     alt="logo"
     src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJtFXKFKFoihdrJEvX4jBtXqfcO2kJ0KAlIg&usqp=CAU"
     />
@@ -13,14 +13,14 @@ const Title = () => (
 
     const Header=()=>{
         return(
-            <div className="header">
+            <div className=" px-3 flex justify-between bg-white shadow-lg">
                 <Title/>
-                <div className="nav-items">
-                   <ul>
-                   <li><Link to="/">Home</Link></li>
-                   <li><Link to="/about">About</Link></li>
-                    <li><Link to="/contact">Contact</Link></li>
-                    <li>Cart</li>
+                <div className="pr-5">
+                   <ul className="flex py-8">
+                   <li className="px-3"><Link to="/">Home</Link></li>
+                   <li className="px-3"><Link to="/about">About</Link></li>
+                    <li className="px-3"><Link to="/contact">Contact</Link></li>
+                    <li className="px-3">Cart</li>
                     </ul> 
                 </div>
                 
